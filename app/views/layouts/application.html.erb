@@ -4,8 +4,10 @@
     <title>Blogg</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
@@ -15,7 +17,9 @@
   <body>
     <%= render 'layouts/topnavbar' %>
 
+  <main class="container">
     <%= yield %>
+  </main>
 
     <%= render 'layouts/footer' %>
   </body>
